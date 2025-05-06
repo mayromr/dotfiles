@@ -5,6 +5,9 @@ return {
     'sindrets/diffview.nvim',
     opts = {
       enhanced_diff_hl = true,
+      default_args = {
+        DiffviewOpen = { '--untracked-files=no', '--imply-local' },
+      },
       view = {
         default = {
           layout = 'diff2_horizontal',
@@ -24,6 +27,7 @@ return {
         },
       },
     },
+    cmd = { 'DiffviewOpen' },
     keys = {
       {
         '<leader>gd',

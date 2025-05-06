@@ -2,7 +2,7 @@ return {
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VeryLazy',
-    branch = '0.1.x',
+    -- branch = '0.1.x',
     dependencies = {
       'nvim-telescope/telescope-smart-history.nvim',
       'nvim-lua/plenary.nvim',

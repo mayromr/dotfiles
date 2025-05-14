@@ -44,3 +44,8 @@ vim.keymap.set('n', '<Leader>l', function()
     virtual_text = not vim.diagnostic.config().virtual_text,
   }
 end, { desc = 'Toggle virtual [L]ines' })
+
+vim.keymap.del('n', 'gra')
+vim.keymap.del('n', 'grn')
+vim.keymap.del('n', 'gri')
+vim.keymap.del('n', 'grr')

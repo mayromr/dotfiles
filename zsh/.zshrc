@@ -140,3 +140,5 @@ source ~/.config/zsh/fzf-git.sh
 
 # export TERM="xterm-256color"
 # [[ -n $TMUX ]] && export TERM="screen-256color"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

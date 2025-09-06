@@ -32,6 +32,7 @@ return {
       sql = { 'sql_formatter' },
       json = { 'jq' },
       toml = { 'taplo' },
+      fish = { 'fish_indent' },
     },
     format_on_save = function(bufnr)
       local disable_format_on_save_ft = { json = true, toml = true }

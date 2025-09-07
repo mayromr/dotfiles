@@ -4,6 +4,7 @@ if status is-interactive
     # Path
     set -x fish_user_paths
     fish_add_path ~/.cargo/bin
+    fish_add_path /opt/homebrew/bin
 
     set -gx EDITOR (which nvim)
     set -gx VISUAL $EDITOR

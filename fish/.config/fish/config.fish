@@ -25,8 +25,6 @@ if status is-interactive
     alias ll 'eza --color=always --icons --group-directories-first --all --long'
     abbr l ll
 
-    alias bat batcat
-
     # Editor
     abbr vim nvim
     abbr vi nvim

@@ -2,3 +2,6 @@
 .zsh-dev-alias.sh
 zsh-dev-alias
 zsh-dev-alias.sh
+
+fish_variables
+secrets.fish

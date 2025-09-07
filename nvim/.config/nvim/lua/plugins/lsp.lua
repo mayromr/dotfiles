@@ -71,7 +71,7 @@ return {
             },
           },
         },
-        terraformls = {},
+        -- terraformls = {},
         cspell = {},
         omnisharp = {
           settings = {

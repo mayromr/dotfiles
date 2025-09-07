@@ -175,7 +175,26 @@ return {
     },
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
-  'tpope/vim-abolish',
+  {
+    'tpope/vim-abolish',
+    lazy = false,
+    dependencies = { 'folke/which-key.nvim' },
+    config = function()
+      require('which-key').add {
+        { 'crc', desc = 'camelCase' },
+        { 'crr', desc = 'PascalCase' },
+        { 'crm', desc = 'MixedCase (aka PascalCase)' },
+        { 'crs', desc = 'snake_case' },
+        { 'cr_', desc = 'snake_case' },
+        { 'cru', desc = 'SNAKE_UPPER_CASE' },
+        { 'crU', desc = 'SNAKE_UPPER_CASE' },
+        { 'crk', desc = 'kebab-case (not reversible)' },
+        { 'cr-', desc = 'Kebab Case (kebab-case; not reversible)' },
+        { 'cr.', desc = 'Dot Case (not reversible)' },
+        { 'cr<space>', desc = 'Space Case (not reversible)' },
+      }
+    end,
+  },
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
     config = function()

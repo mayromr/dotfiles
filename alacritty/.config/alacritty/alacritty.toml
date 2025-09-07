@@ -1,7 +1,14 @@
 [general]
-import = [
-    "~/.config/alacritty/alacritty/catppuccin-mocha.toml"
-]
+# import = [
+#     "~/.config/alacritty/alacritty/catppuccin-mocha.toml"
+# ]
+
+# I don't like the catppuccin-mocha impl here I just took the colors for now
+[colors.primary]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+dim_foreground = "#CDD6F4"
+bright_foreground = "#CDD6F4"
 
 [font]
 size = 13

@@ -12,7 +12,7 @@ function venv
             set -f initial_query current
         end
 
-        set -af entries "$(basename (string trim -r -c "/bin/activate.fish" $local_venvs)) (from current directory),$local_venvs"
+        set -af entries "$(basename (string replace -r '(/[^/]+){3}$' "" $local_venvs)) (from current directory),$local_venvs"
     end
 
     if test (count $entries) -eq 0

@@ -7,7 +7,7 @@ function venv
         end
     end
 
-    for local_venvs in (fd -a -p --exact-depth 3 /bin/activate.fish)
+    for local_venvs in (fd -a -p -u --exact-depth 3 '/bin/activate.fish$')
         if test -n $initial_query
             set -f initial_query current
         end

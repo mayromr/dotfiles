@@ -16,9 +16,9 @@ if status is-interactive
     alias ls="eza --icons --group-directories-first"
     alias la 'eza --icons --group-directories-first --all'
     alias ll 'eza --icons --group-directories-first --all --long'
-    alias cat bat
-
     abbr l ll
+
+    alias cat bat
 
     # Editor
     abbr vim nvim
@@ -27,4 +27,5 @@ if status is-interactive
 
     starship init fish | source
     pyenv init - fish | source
+
 end

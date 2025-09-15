@@ -9,7 +9,7 @@ function venv
 
     for local_venvs in (fd -a -p -u --exact-depth 3 '/bin/activate.fish$')
         if test -n $initial_query
-            set -f initial_query current
+            set -f initial_query 'current '
         end
 
         set -af entries "$(basename (string replace -r '(/[^/]+){3}$' "" $local_venvs)) (from current directory),$local_venvs"

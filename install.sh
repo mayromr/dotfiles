@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/bash
 STOW_FOLDERS="nvim,tmux,zsh,alacritty,bottom,karabiner,fish,starship"
 DOTFILES=$HOME/dotfiles
 

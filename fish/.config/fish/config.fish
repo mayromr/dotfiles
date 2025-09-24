@@ -26,6 +26,8 @@ if status is-interactive
     abbr v nvim
 
     starship init fish | source
-    pyenv init - fish | source
+    if type -q $pyenv
+        pyenv init - fish | source
+    end
 
 end

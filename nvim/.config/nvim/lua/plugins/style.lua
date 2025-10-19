@@ -6,6 +6,17 @@ return {
     config = function()
       require('catppuccin').setup {
         flavour = 'mocha',
+        lsp_styles = {
+          underlines = {
+            errors = { 'undercurl' },
+            hints = { 'undercurl' },
+            warnings = { 'undercurl' },
+            information = { 'undercurl' },
+          },
+          inlay_hints = {
+            background = true,
+          },
+        },
         integrations = {
           gitsigns = true,
           treesitter = true,
@@ -13,18 +24,6 @@ return {
           telescope = { enabled = true },
           mini = {
             enabled = true,
-          },
-          native_lsp = {
-            enabled = true,
-            underlines = {
-              errors = { 'undercurl' },
-              hints = { 'undercurl' },
-              warnings = { 'undercurl' },
-              information = { 'undercurl' },
-            },
-            inlay_hints = {
-              background = true,
-            },
           },
         },
       }

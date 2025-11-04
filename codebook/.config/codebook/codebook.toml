@@ -1,0 +1,11 @@
+dictionaries  = ["absolute", "relative"]
+
+[[custom_dictionaries_definitions]]
+name = "absolute"
+path = "/home/nhruo123/dotfiles/codebook/.config/codebook/absolute.txt"
+allow_add_words = true
+
+[[custom_dictionaries_definitions]]
+name = "relative"
+path = "./relative.txt"
+allow_add_words = true

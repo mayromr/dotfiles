@@ -21,7 +21,7 @@ return {
           gitsigns = true,
           treesitter = true,
           diffview = true,
-          telescope = { enabled = true },
+          snacks = { enabled = true },
           mini = {
             enabled = true,
           },

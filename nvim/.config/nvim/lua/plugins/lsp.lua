@@ -250,7 +250,14 @@ return {
         'mypy',
       })
 
-      require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+      require('mason-tool-installer').setup {
+        ensure_installed = ensure_installed,
+        integrations = {
+          ['mason-lspconfig'] = true,
+          ['mason-null-ls'] = false,
+          ['mason-nvim-dap'] = false,
+        },
+      }
 
       require('mason-lspconfig').setup {
         ensure_installed = {},

@@ -188,7 +188,7 @@ return {
           },
         },
         -- terraformls = {},
-        cspell = {},
+        -- cspell = {},
         omnisharp = {
           settings = {
             cmd = { 'dotnet', vim.fn.stdpath 'data' .. '/mason/packages/omnisharp/libexec/OmniSharp.dll' },

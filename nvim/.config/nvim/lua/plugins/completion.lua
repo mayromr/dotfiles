@@ -1,5 +1,5 @@
 local default_sources = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' }
-local debug_sources = vim.list_extend(default_sources, { 'dap' })
+local debug_sources = vim.list_extend({ 'dap' }, default_sources)
 
 return {
   {
@@ -7,6 +7,7 @@ return {
     -- optional: provides snippets for the snippet source
     dependencies = {
       'rafamadriz/friendly-snippets',
+      'mayromr/blink-dap',
     },
 
     event = { 'InsertEnter', 'CmdlineEnter' },

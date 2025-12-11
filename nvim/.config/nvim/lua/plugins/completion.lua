@@ -7,7 +7,7 @@ return {
     -- optional: provides snippets for the snippet source
     dependencies = {
       'rafamadriz/friendly-snippets',
-      'mayromr/blink-dap',
+      'mayromr/blink-cmp-dap',
     },
 
     event = { 'InsertEnter', 'CmdlineEnter' },

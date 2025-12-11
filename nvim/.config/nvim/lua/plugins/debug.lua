@@ -1,7 +1,5 @@
 return {
   'mfussenegger/nvim-dap',
-  lazy = true,
-  event = 'VeryLazy',
   dependencies = {
     {
       'rcarriga/nvim-dap-ui',
@@ -179,6 +177,7 @@ return {
       desc = 'Run to cursor',
     },
   },
+  cmd = { 'DapClearBreakpoints', 'DapNew', 'DapInstall', 'DapUninstall', 'DapToggleBreakpoint', 'DapShowLog' },
   config = function()
     local dap = require 'dap'
 

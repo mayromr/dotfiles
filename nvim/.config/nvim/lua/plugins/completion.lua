@@ -1,22 +1,12 @@
 local default_sources = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' }
-local debug_sources = vim.list_extend(vim.deepcopy(default_sources), { 'dap' })
+local debug_sources = vim.list_extend(default_sources, { 'dap' })
 
 return {
-  {
-    'saghen/blink.compat',
-    -- use the latest release, via version = '*', if you also use the latest release for blink.cmp
-    version = '*',
-    -- lazy.nvim will automatically load the plugin when it's required by blink.cmp
-    lazy = true,
-    -- make sure to set opts so that lazy.nvim calls blink.compat's setup
-    opts = {},
-  },
   {
     'saghen/blink.cmp',
     -- optional: provides snippets for the snippet source
     dependencies = {
       'rafamadriz/friendly-snippets',
-      'rcarriga/cmp-dap',
     },
 
     event = { 'InsertEnter', 'CmdlineEnter' },
@@ -79,10 +69,7 @@ return {
         providers = {
           dap = {
             name = 'dap',
-            module = 'blink.compat.source',
-            enabled = function()
-              return require('cmp_dap').is_dap_buffer()
-            end,
+            module = 'blink-dap', -- blink.cmp will call `require('your-source').new(...)`
           },
           lazydev = {
             name = 'LazyDev',

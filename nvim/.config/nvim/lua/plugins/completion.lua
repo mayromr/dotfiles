@@ -70,7 +70,7 @@ return {
         providers = {
           dap = {
             name = 'dap',
-            module = 'blink-dap', -- blink.cmp will call `require('your-source').new(...)`
+            module = 'blink-cmp-dap', -- blink.cmp will call `require('your-source').new(...)`
           },
           lazydev = {
             name = 'LazyDev',

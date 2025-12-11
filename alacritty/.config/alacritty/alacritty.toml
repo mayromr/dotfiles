@@ -42,6 +42,16 @@ bindings = [
     {key = "s", mods = "Command", chars = "\u001Bs"}, 
 
     {key = "e", mods = "Command", chars = "\u001Be"}, 
+
+    {key = "d", mods = "Command", chars = "\u001Bd"}, 
+    {key = "f", mods = "Command", chars = "\u001Bf"}, 
+    {key = "h", mods = "Command", chars = "\u001Bh"}, 
+    {key = "i", mods = "Command", chars = "\u001Bi"}, 
+    {key = "r", mods = "Command", chars = "\u001Br"}, 
+    {key = "m", mods = "Command", chars = "\u001Bm"}, 
+    {key = "p", mods = "Command", chars = "\u001Bp"}, 
+    {key = "w", mods = "Command", chars = "\u001Bw"}, 
+
 ]
 
 [font.bold]

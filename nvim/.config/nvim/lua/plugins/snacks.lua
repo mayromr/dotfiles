@@ -50,7 +50,7 @@ return {
     {
       '<leader>sF',
       function()
-        Snacks.picker.files { ignored = true }
+        Snacks.picker.files { ignored = true, hidden = true }
       end,
       desc = 'Find Files',
     },

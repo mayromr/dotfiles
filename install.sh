@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-STOW_FOLDERS="nvim,tmux,zsh,alacritty,bottom,karabiner,fish,starship,codebook"
+STOW_FOLDERS="nvim,tmux,zsh,alacritty,bottom,karabiner,fish,starship,codebook,git"
 DOTFILES=$HOME/dotfiles
 
 pushd $DOTFILES

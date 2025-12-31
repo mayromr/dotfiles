@@ -8,6 +8,7 @@ required programs:
 - fd
 - neovim ( better to build form sources )
 - tmux
+- delta
 - [bottom (btm)](https://github.com/ClementTsang/bottom)
 - fonts I use JetBrainsMono Nerd Font Mono font from https://www.nerdfonts.com/font-downloads
 

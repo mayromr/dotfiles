@@ -17,9 +17,11 @@ return {
       null_ls.setup {
         sources = {
           c_spell.code_actions.with {
+            disabled_filetypes = { 'markdown' },
             config = config,
           },
           c_spell.diagnostics.with {
+            disabled_filetypes = { 'markdown' },
             config = config,
             -- Force the severity to be HINT
             diagnostic_config = {

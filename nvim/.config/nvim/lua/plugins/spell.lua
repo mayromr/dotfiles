@@ -65,11 +65,11 @@ return {
 
       vim.keymap.set('n', '[z', function()
         vim.diagnostic.jump { count = -1, float = true, namespace = get_spell_namespace() }
-      end, { desc = 'Go to previous [D]iagnostic message' })
+      end, { desc = 'Go to previous Spelling error' })
 
       vim.keymap.set('n', ']z', function()
         vim.diagnostic.jump { count = 1, float = true, namespace = get_spell_namespace() }
-      end, { desc = 'Go to next [D]iagnostic message' })
+      end, { desc = 'Go to next Spelling error' })
     end,
   },
 }

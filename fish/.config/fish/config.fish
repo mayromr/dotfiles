@@ -1,6 +1,8 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
+    # theme
+    fish_config theme choose catppuccin-mocha
     # Path
     set -x fish_user_paths
     fish_add_path ~/.cargo/bin

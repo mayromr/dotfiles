@@ -1,5 +1,5 @@
 local servers = {
-  -- clangd = {},
+  clangd = {},
   -- gopls = {},
   pyright = {},
   rust_analyzer = {
@@ -75,6 +75,8 @@ vim.list_extend(ensure_installed, {
   'isort',
   'pylint',
   'mypy',
+  'jq',
+  'yq',
 })
 
 return {
@@ -219,7 +221,7 @@ return {
           if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint, event.buf) then
             map('<leader>ci', function()
               vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
-            end, '[C]ode Toggle [I]lay')
+            end, 'Code Toggle inlay')
           end
         end,
       })

@@ -10,6 +10,14 @@ vim.keymap.set('n', '<leader>n', '<C-[><cmd>nohlsearch<CR>', { desc = 'no serach
 -- vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 -- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Yank stuff
+vim.keymap.set('n', '<leader>yf', function()
+  vim.fn.setreg('+', vim.fn.expand '%:.')
+end, { desc = 'Copy file path' })
+vim.keymap.set('n', '<leader>yl', function()
+  vim.fn.setreg('+', vim.fn.expand '%:.' .. ':' .. vim.fn.line '.')
+end, { desc = 'Copy file path and line number' })
+
 -- Quick fix movement
 vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>', { desc = 'Move down in quick fix list item' })
 vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>', { desc = 'Move up in quick fix list item' })
